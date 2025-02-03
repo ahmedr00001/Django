@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    <h2>Product List</h2>
+
+    {% for value in pro %}
+        <h1>{{ value.name }}</h1>
+    {% empty %}
+        <p>No products available.</p>
+    {% endfor %}
+ <h3>{{pro_count}}</h3>
+
+  
+
+{% endblock content %}
