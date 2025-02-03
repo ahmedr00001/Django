@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9=0ve6s7ficu(!^33aio2devzyn(mgzqt#%3#45@r#iuol5zb6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'my_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,10 +124,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATIC_ROOT = os.path.join(BASE_DIR,'static')   #path of your static file
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'blog/static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # path of your static file
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'blog/static')]
 
 
-#media active
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')   #path of your static file
-MEDIA_URL = '/media/'   #then go to url of project to continue
+# media active
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # path of your static file
+MEDIA_URL = '/media/'  # then go to url of project to continue
