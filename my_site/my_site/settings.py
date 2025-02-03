@@ -128,3 +128,6 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')   #path of your static file
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'blog/static')]
 
 
+#media active
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')   #path of your static file
+MEDIA_URL = '/media/'   #then go to url of project to continue
