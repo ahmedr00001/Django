@@ -5,7 +5,8 @@
     <h2>Product List</h2>
 
     {% for value in pro %}
-        <h1>{{ value.name }}</h1>
+        <h2>{{ value.name }}</h2>
+        <img src="{{value.image.url}}" width="250" height="150" alt="">
     {% empty %}
         <p>No products available.</p>
     {% endfor %}
