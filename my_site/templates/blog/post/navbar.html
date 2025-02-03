@@ -1,3 +1,8 @@
-<h2><a href="{%url 'products:products' %}">product</a></span>
-<span><a href="{%url 'relations:relations' %}">relations</a></span>
-<span><a href="{%url 'blog:post_list' %}">Post</a></span>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+<nav>
+    <h2><a href="{% url 'products:products' %}">Product</a></h2>
+    <span><a href="{% url 'relations:relations' %}">Relations</a></span>
+    <span><a href="{% url 'blog:post_list' %}">Post</a></span>
+</nav>
