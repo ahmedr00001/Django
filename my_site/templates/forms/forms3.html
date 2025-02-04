@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+    <h1>welcome from forms second way </h1>
+    <form method="post">
+        {% csrf_token %}   
+        {{my_form}}
+        <br>
+        <br>
+        <br>
+        
+
+        <input type="submit" value="submit">
+        <br>
+
+    </form>
+    <h4>users num is {{users_num}}</h4>
+
+{% endblock content %}

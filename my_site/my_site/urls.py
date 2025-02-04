@@ -24,9 +24,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls' , namespace='blog')),
-    path('', include('blog.urls' , namespace='blog')),
     path ('products/',include('products.urls',namespace='products')),
+    path ('',include('products.urls',namespace='products')),
     path ('relations/',include('relations.urls',namespace='relations')),
+    path ('forms/' , include('forms.urls',namespace='forms'))
 ] + static(settings.MEDIA_URL , document_root=settings.MEDIA_ROOT)   #this static for images activate
 
 
